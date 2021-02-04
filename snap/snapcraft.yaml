@@ -27,23 +27,6 @@ architectures:
     - build-on: arm64
     - build-on: amd64
 
-passthrough:
-  hooks:
-    connect-plug-network-observe:
-      command-chain:
-        - snap/command-chain/snapcraft-runner
-      plugs:
-        - network
-        - network-observe
-        - network-control
-    connect-plug-network-control:
-      command-chain:
-        - snap/command-chain/snapcraft-runner
-      plugs:
-        - network
-        - network-observe
-        - network-control
-
 apps:
    device-rfid-llrp-go:
     adapter: none
