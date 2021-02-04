@@ -1,6 +1,0 @@
-#!/bin/bash -e
-
-$SNAP/bin/setup.sh
-
-
-
